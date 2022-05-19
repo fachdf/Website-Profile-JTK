@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "Admins",
+  "info": {
+    "name": "Admins",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama_admin": {
+      "type": "string",
+      "required": true,
+      "minLength": 1
+    },
+    "email_admin": {
+      "type": "email",
+      "required": true,
+      "minLength": 1
+    },
+    "password_admin": {
+      "type": "password",
+      "required": true,
+      "minLength": 8
+    }
+  }
+}

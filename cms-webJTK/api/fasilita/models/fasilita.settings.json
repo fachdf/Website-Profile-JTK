@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fasilitas",
+  "info": {
+    "name": "Prasarana",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama_fasilitas": {
+      "type": "string",
+      "required": true,
+      "minLength": 1
+    },
+    "lokasi_fasilitas": {
+      "type": "string",
+      "required": true,
+      "minLength": 1
+    },
+    "deskripsi_fasilitas": {
+      "type": "string"
+    },
+    "gambar_fasilitas": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}
