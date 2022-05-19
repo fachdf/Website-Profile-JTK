@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kurikulum",
+  "info": {
+    "name": "Kurikulum"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "judul": {
+      "type": "string"
+    },
+    "deskripsi": {
+      "type": "richtext"
+    },
+    "gambar": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}
