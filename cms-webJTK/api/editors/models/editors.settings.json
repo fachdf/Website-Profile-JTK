@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "Editors",
+  "info": {
+    "name": "Editors",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama_editor": {
+      "type": "string",
+      "required": true,
+      "minLength": 1
+    },
+    "email_editor": {
+      "type": "email",
+      "required": true,
+      "minLength": 1
+    },
+    "password_editor": {
+      "type": "password",
+      "required": true,
+      "minLength": 8
+    }
+  }
+}

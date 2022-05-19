@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/fasilitas",
+      "handler": "fasilita.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/fasilitas/count",
+      "handler": "fasilita.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/fasilitas/:id",
+      "handler": "fasilita.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/fasilitas",
+      "handler": "fasilita.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/fasilitas/:id",
+      "handler": "fasilita.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/fasilitas/:id",
+      "handler": "fasilita.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
