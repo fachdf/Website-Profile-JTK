@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "profil-jurusan",
+  "info": {
+    "name": "Profil Jurusan"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "judul": {
+      "type": "string"
+    },
+    "deskripsi": {
+      "type": "richtext"
+    },
+    "gambar": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}
