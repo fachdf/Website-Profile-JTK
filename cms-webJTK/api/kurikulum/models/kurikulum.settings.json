@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "dosen",
+  "collectionName": "kurikulum",
   "info": {
-    "name": "Dosen",
-    "description": ""
+    "name": "Kurikulum"
   },
   "options": {
     "increments": true,
@@ -12,14 +11,14 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "nama": {
+    "judul": {
       "type": "string"
     },
-    "mata_kuliah": {
-      "type": "text"
+    "deskripsi": {
+      "type": "richtext"
     },
-    "foto": {
-      "model": "file",
+    "gambar": {
+      "collection": "file",
       "via": "related",
       "allowedTypes": [
         "images",
@@ -29,18 +28,6 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
-    },
-    "bidang": {
-      "type": "text"
-    },
-    "kbk": {
-      "type": "text"
-    },
-    "daftar_publikasi": {
-      "type": "string"
-    },
-    "pengalaman": {
-      "type": "text"
     }
   }
 }

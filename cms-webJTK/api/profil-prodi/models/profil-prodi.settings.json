@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "dosen",
+  "collectionName": "profil-prodi",
   "info": {
-    "name": "Dosen",
+    "name": "Profil Prodi",
     "description": ""
   },
   "options": {
@@ -12,14 +12,14 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "nama": {
+    "judul": {
       "type": "string"
     },
-    "mata_kuliah": {
-      "type": "text"
+    "desripsi": {
+      "type": "richtext"
     },
-    "foto": {
-      "model": "file",
+    "gambar": {
+      "collection": "file",
       "via": "related",
       "allowedTypes": [
         "images",
@@ -29,18 +29,6 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
-    },
-    "bidang": {
-      "type": "text"
-    },
-    "kbk": {
-      "type": "text"
-    },
-    "daftar_publikasi": {
-      "type": "string"
-    },
-    "pengalaman": {
-      "type": "text"
     }
   }
 }
