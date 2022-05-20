@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "galleries",
+  "info": {
+    "name": "Gallery",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "keterangan_gallery": {
+      "type": "string"
+    },
+    "deskripsi_gallery": {
+      "type": "text"
+    },
+    "gambar_gallery": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "tanggal_gallery": {
+      "type": "date"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "artikels",
+  "info": {
+    "name": "Artikel"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "judul_artikel": {
+      "type": "string"
+    },
+    "deskripsi_artikel": {
+      "type": "text"
+    },
+    "kategori_artikel": {
+      "type": "string"
+    },
+    "gambar_artikel": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "status_artikel": {
+      "type": "string"
+    },
+    "tanggal_posting_artikel": {
+      "type": "date"
+    },
+    "tanggal_perbarui_artikel": {
+      "type": "date"
+    }
+  }
+}
