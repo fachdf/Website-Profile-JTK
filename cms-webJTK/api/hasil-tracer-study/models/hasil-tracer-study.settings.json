@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hasil_tracer_studies",
+  "info": {
+    "name": "HasilTracerStudy"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "judul_hasilTracerStudy": {
+      "type": "string",
+      "required": true
+    },
+    "deskripsi_hasilTracerStudy": {
+      "type": "richtext",
+      "required": true
+    },
+    "grafik_hasilTracerStudy": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    }
+  }
+}

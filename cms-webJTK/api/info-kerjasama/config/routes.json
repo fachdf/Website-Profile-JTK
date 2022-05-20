@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/info-kerjasamas",
+      "handler": "info-kerjasama.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/info-kerjasamas/count",
+      "handler": "info-kerjasama.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/info-kerjasamas/:id",
+      "handler": "info-kerjasama.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/info-kerjasamas",
+      "handler": "info-kerjasama.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/info-kerjasamas/:id",
+      "handler": "info-kerjasama.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/info-kerjasamas/:id",
+      "handler": "info-kerjasama.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

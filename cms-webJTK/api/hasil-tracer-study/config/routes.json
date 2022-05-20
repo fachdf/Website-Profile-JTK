@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/hasil-tracer-studies",
+      "handler": "hasil-tracer-study.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/hasil-tracer-studies/count",
+      "handler": "hasil-tracer-study.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/hasil-tracer-studies/:id",
+      "handler": "hasil-tracer-study.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/hasil-tracer-studies",
+      "handler": "hasil-tracer-study.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/hasil-tracer-studies/:id",
+      "handler": "hasil-tracer-study.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/hasil-tracer-studies/:id",
+      "handler": "hasil-tracer-study.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

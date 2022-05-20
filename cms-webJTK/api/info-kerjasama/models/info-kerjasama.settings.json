@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "info_kerjasamas",
+  "info": {
+    "name": "InfoKerjasama"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "mitra_infoKerjasama": {
+      "type": "string",
+      "required": true
+    },
+    "deskripsi_infoKerjasama": {
+      "type": "richtext",
+      "required": true
+    },
+    "gambar_infoKerjasama": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    }
+  }
+}
