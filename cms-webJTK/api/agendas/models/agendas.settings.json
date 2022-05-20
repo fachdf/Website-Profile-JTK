@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "agendas",
+  "info": {
+    "name": "agendas",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "keterangan_agenda": {
+      "type": "text",
+      "required": true
+    },
+    "deskripsi_agenda": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}
