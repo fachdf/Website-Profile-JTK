@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_footer_footer_component_bodies",
+  "info": {
+    "name": "footer_component_body",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "footer_component_body_text": {
+      "type": "string"
+    },
+    "footer_componen_body_image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

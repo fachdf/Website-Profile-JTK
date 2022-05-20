@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_navbar_navbar_dropdown_items",
+  "info": {
+    "name": "navbar_dropdown_items",
+    "icon": "angle-down"
+  },
+  "options": {},
+  "attributes": {
+    "navbar_dropdown_title": {
+      "type": "string"
+    },
+    "navbar_dropdown_images": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "navbar_dropdown_link": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_footer_footer_components",
+  "info": {
+    "name": "footer_component",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "footer_component_title": {
+      "type": "string"
+    },
+    "footer_component_body": {
+      "type": "component",
+      "repeatable": true,
+      "component": "footer.footer-component-body"
+    }
+  }
+}
