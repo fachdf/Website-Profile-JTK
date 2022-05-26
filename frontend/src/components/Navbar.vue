@@ -17,7 +17,7 @@
       <v-menu :rounded="rounded" open-on-hover offset-y transition="slide-x-transition" bottom right >
         <template v-slot:activator="{on, attrs}">
             <v-btn text class="font-weight-bold" flat v-bind="attrs" v-on="on">
-                <h3 >
+                <h3 class="font-weight-bold btext">
                     <b>Tentang JTK</b>
                 </h3>
             </v-btn>
@@ -25,7 +25,7 @@
             <v-list dense>
                     <v-list-item v-for="(item, index) in tentangJTK" :key="index" router :to="item.link">
                        <v-list-item-action>
-                            <v-list-item-title class="font-weight-bold"><h3>{{ item.title }}</h3></v-list-item-title>
+                            <v-list-item-title class="font-weight-bold btext"><h3>{{ item.title }}</h3></v-list-item-title>
                         </v-list-item-action>
                     </v-list-item>
                 </v-list>
@@ -34,7 +34,7 @@
       <v-menu :rounded="rounded" open-on-hover offset-y transition="slide-x-transition" bottom right >
         <template v-slot:activator="{on, attrs}">
             <v-btn text class="font-weight-bold" flat v-bind="attrs" v-on="on">
-                <h3 >
+                <h3 class="font-weight-bold btext">
                     <b>Pendidikan</b>
                 </h3>
             </v-btn>
@@ -42,22 +42,22 @@
             <v-list dense>
                     <v-list-item v-for="(item, index) in pendidikan" :key="index" router :to="item.link">
                        <v-list-item-action>
-                            <v-list-item-title class="font-weight-bold"><h3>{{ item.title }}</h3></v-list-item-title>
+                            <v-list-item-title class="font-weight-bold btext"><h3>{{ item.title }}</h3></v-list-item-title>
                         </v-list-item-action>
                     </v-list-item>
                 </v-list>
       </v-menu>
 
       <v-btn  @click="toBeranda()" text >
-        <h3 class="font-weight-bold"><b>Penghargaan</b></h3>
+        <h3 class="font-weight-bold btext"><b>Penghargaan</b></h3>
       </v-btn>
 
       <v-btn  @click="toBeranda()" text >
-        <h3 class="font-weight-bold"><b>Kerjasama</b></h3>
+        <h3 class="font-weight-bold btext"><b>Kerjasama</b></h3>
       </v-btn>
       
       <v-btn  @click="toBeranda()" text >
-        <h3 class="font-weight-bold"><b>Kontak</b></h3>
+        <h3 class="font-weight-bold btext"><b>Kontak</b></h3>
       </v-btn>
     
     </v-toolbar>
@@ -65,7 +65,7 @@
  </nav>
 </template>
 <style>
-.b {
+.btext {
    color : #111F4D 
 }
 </style>

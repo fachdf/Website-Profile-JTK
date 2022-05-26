@@ -12,13 +12,15 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "keterangan_agenda": {
+    "Nama_agenda": {
       "type": "text",
       "required": true
     },
-    "deskripsi_agenda": {
-      "type": "richtext",
-      "required": true
+    "Tanggal_Agenda": {
+      "type": "date"
+    },
+    "Deskripsi_Agenda": {
+      "type": "string"
     }
   }
 }
