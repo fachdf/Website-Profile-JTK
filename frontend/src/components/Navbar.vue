@@ -80,6 +80,10 @@ export default {
                 link: "/riwayatJTK"
             },
             {
+                title: "Profil Jurusan",
+                link: "/profiljurusan"
+            },
+            {
                 title: "Alumni",
                 link: "/alumni"
             },
