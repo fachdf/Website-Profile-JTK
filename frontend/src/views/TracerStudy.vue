@@ -24,7 +24,7 @@
             <v-sheet
         color="#FF6600"
         height="5"
-        width="455"
+        width="500"
       ></v-sheet>
         </div>
         
@@ -39,8 +39,7 @@
       class="ml-9"
     ></v-breadcrumbs>
         
-        <KurikulumD4/>
-        <KurikulumD3/>
+    <TracerStudyList/>
     </div>
     
 
@@ -53,13 +52,10 @@
 </style>
 <script>
 import axios from "axios";
-import KurikulumD4 from "../components/KurikulumD4.vue";
-import KurikulumD3 from "../components/KurikulumD3.vue";
-
+import TracerStudyList from "../components/TracerStudyList.vue";
   export default {
     components: {
-    KurikulumD4,
-    KurikulumD3
+    TracerStudyList
    },
 
     data () {
@@ -74,7 +70,7 @@ import KurikulumD3 from "../components/KurikulumD3.vue";
         ],
         slides: [{
           img : "https://res.cloudinary.com/kelompok-b7/image/upload/v1653566467/Group_208_991116458a.png",
-          text : "Kurikulum"
+          text : "Hasil Tracer Study"
         }
         ],
         items: [
@@ -84,9 +80,9 @@ import KurikulumD3 from "../components/KurikulumD3.vue";
           href: '/',
         },
         {
-          text: 'Kurikulum',
+          text: 'Tracer Study',
           disabled: true,
-          href: '/kurikulum',
+          href: '/tracerStudy',
         }
       ],
       riwayatJTK_text : ""
@@ -94,20 +90,13 @@ import KurikulumD3 from "../components/KurikulumD3.vue";
       }
 
     },
-    beforeMount() {
-    this.fetchData();
-   },
-   methods: {
-    async fetchData() {
-      const riwayat = await axios.get("http://localhost:1337/riwayat-jtk");
-      var i;
-      this.riwayatJTK_text = riwayat.data.riwayatJTK
-      console.log(riwayat.data)
-    },
-  },
+    
+    
   }
+  
 </script>
 
 <style >
 
 </style>
+

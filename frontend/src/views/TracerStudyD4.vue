@@ -1,6 +1,6 @@
 <template>
 
-    <div>
+    <div align="center">
         <v-carousel
     cycle
     height="400"
@@ -38,9 +38,25 @@
       small
       class="ml-9"
     ></v-breadcrumbs>
-        
-        <KurikulumD4/>
-        <KurikulumD3/>
+  
+    <p align=center class="display-2 mt-10 pl-10 btext font-weight-bold" >Prodi D4 Teknik Informatika</p>
+    <v-sheet
+       color="#FF6600"
+       padding-top="10"
+       margin-bottom="40"
+       padding-bottom="50"
+       height="5"
+       width="700"
+      > 
+      </v-sheet>
+    <v-sheet
+        height="20"
+        width="100%"
+        color="white"
+      > 
+      </v-sheet>
+    <TCD4Kelulusan/>
+    <TCD4Sebaran/>
     </div>
     
 
@@ -53,13 +69,13 @@
 </style>
 <script>
 import axios from "axios";
-import KurikulumD4 from "../components/KurikulumD4.vue";
-import KurikulumD3 from "../components/KurikulumD3.vue";
+import TCD4Kelulusan from "../components/TracerStudyD4/TCD4Kelulusan.vue";
+import TCD4Sebaran from "../components/TracerStudyD4/TCD4Sebaran.vue";
 
   export default {
     components: {
-    KurikulumD4,
-    KurikulumD3
+      TCD4Kelulusan,
+      TCD4Sebaran
    },
 
     data () {
@@ -74,7 +90,7 @@ import KurikulumD3 from "../components/KurikulumD3.vue";
         ],
         slides: [{
           img : "https://res.cloudinary.com/kelompok-b7/image/upload/v1653566467/Group_208_991116458a.png",
-          text : "Kurikulum"
+          text : "Hasil Tracer Study"
         }
         ],
         items: [
@@ -84,9 +100,14 @@ import KurikulumD3 from "../components/KurikulumD3.vue";
           href: '/',
         },
         {
-          text: 'Kurikulum',
+          text: 'Tracer Study',
+          disabled: false,
+          href: '/tracerStudy',
+        },
+        {
+          text: 'Tracer Study D4',
           disabled: true,
-          href: '/kurikulum',
+          href: '/tracerStudyD4',
         }
       ],
       riwayatJTK_text : ""
@@ -94,20 +115,13 @@ import KurikulumD3 from "../components/KurikulumD3.vue";
       }
 
     },
-    beforeMount() {
-    this.fetchData();
-   },
-   methods: {
-    async fetchData() {
-      const riwayat = await axios.get("http://localhost:1337/riwayat-jtk");
-      var i;
-      this.riwayatJTK_text = riwayat.data.riwayatJTK
-      console.log(riwayat.data)
-    },
-  },
+    
+    
   }
+  
 </script>
 
 <style >
 
 </style>
+
