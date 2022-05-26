@@ -1,4 +1,5 @@
 <template>
+
  <div class="title">
       <p class="display-2 mt-10 pl-10 btext font-weight-bold" >D3 Teknik Informatika</p>
       <v-sheet
