@@ -30,6 +30,26 @@ const routes: Array<RouteConfig> = [
     component: Gallery
   },
   {
+    path: '/profiljurusan',
+    name: 'Profil Jurusan',
+    component: () => import(/* webpackChunkName: "about" */ '../views/ProfilJurusan.vue')
+  },
+  {
+    path: '/profilprodiD3',
+    name: 'Profil Prodi D3',
+    component: () => import(/* webpackChunkName: "about" */ '../views/ProfilProdiD3.vue')
+  },
+  {
+    path: '/profilprodiD4',
+    name: 'Profil Prodi D4',
+    component: () => import(/* webpackChunkName: "about" */ '../views/ProfilProdiD4.vue')
+  },
+  {
+    path: '/kerjasama',
+    name: 'Kerja Sama',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Kerjasama.vue')
+  },
+  {
     path: '/riwayatJTK',
     name: 'Riwayat JTK',
     component: RiwayatJTK
