@@ -12,7 +12,7 @@
           v-for="(carousel, i) in this.carousel"
             :key="i"
           cols="12"
-          sm="1"
+          sm="3"
           class="mx-2"
           
         >
@@ -72,7 +72,7 @@ import axios from "axios";
       const carousel = await axios.get("http://localhost:1337/agendas");
       //const logoHeader = await axios.get(this.CMS_API + "/logo-header");
       var i;
-      for (let i = 0; i < 5; i++) {
+      for (let i = 0; i < 3; i++) {
         this.carousel.push(carousel.data[i])
         console.log(i)
       }
