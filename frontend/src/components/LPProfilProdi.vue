@@ -15,8 +15,8 @@
         color="white"
       > 
       </v-sheet>
-    <v-btn class="white--text mb-6 mr-10 mt-10" color="#111F4D">Profil D4</v-btn>
-    <v-btn class="white--text mb-6 mt-10" color="#111F4D">Profil D3</v-btn>
+    <v-btn class="white--text mb-6 mr-10 mt-10" color="#111F4D" to="/profilprodiD4">Profil D4</v-btn>
+    <v-btn class="white--text mb-6 mt-10" color="#111F4D" to="/profilprodiD3">Profil D3</v-btn>
     <v-sheet
         height="100"
         width="100%"

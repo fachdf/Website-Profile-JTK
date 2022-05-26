@@ -13,7 +13,7 @@
     margin-bottom="40"
     elevation="1"
     height="5"
-    width="400"
+    width="155"
     >
     </v-sheet>
     <v-sheet
@@ -23,7 +23,7 @@
       > 
       </v-sheet>
     <div align = center class="visi">
-       <p align=center class="btext mt-20 pt-20">Menjadi Program Studi unggulan dan terdepan dalam program pendidikan Diploma III Teknik Informatika yang diakui baik di tingkat nasional maupun internasional pada tahun 2025. </p>
+       <p align = center class="text-xl btext pl-10 mt-10">Pada tahun 2020, menjadi program studi unggulan pada jenjang pendidikan diploma IV bidang Teknik Informatika ditingkat nasional bahkan internasional. Menjadi program studi yang menghasilkan tenaga profesional pengembang perangkat lunak yang kompeten, memiliki semangat terus berkembang, bermoral, berjiwa wirausaha, dan berwawasan lingkungan.</p>
     </div>
     <v-sheet
         height="20"
@@ -36,7 +36,7 @@
     color="#FF6600"
     elevation="1"
     height="5"
-    width="400" 
+    width="155" 
     >
     </v-sheet>
     <v-sheet
@@ -44,9 +44,9 @@
     height = "200"
     width = "67%">
     <div align = center class="misi">
-        <p align=left class="btext  mt-10">- Menyelenggarakan program pendidikan Diploma III Teknik Informatika yang diakui baik di tingkat nasional maupun internasional.
-        <br><br>- Melakukan penelitian terapan yang dapat digunakan oleh Industri, Institusi atau Masyarakat baik ditingkat nasional maupun internasional
-        <br><br>- Melaksanakan pengabdian kepada masyarakat pada lingkup lokal, regional dan nasional.</p>
+        <p align=left class="text-xl btext pl-10 mt-10">1. Menyelenggarakan program pendidikan yang  menghasilkan sarjana terapan di bidang Rekayasa Perangkat Lunak (RPL) yang kompeten, bermoral, berjiwa wirausaha, berwawasan lingkungan serta mampu bersaing di tingkat nasional maupun internasional
+        <br> 2. Melaksanakan penelitian dibidang Teknologi Informasi yang dapat diterapkan pada Industri atau masyarakat ditingkat nasional maupun internasional
+        <br> 3. Melakukan pengabdian kepada masyarakat melalui diseminasi ilmu dan penerapannya di lingkup nasional.</p>
         </div>
     </v-sheet>
        
@@ -55,7 +55,7 @@
 
 <style scoped>
 .visi {
-  width : 60%
+  width : 67%
 }
 .misi {
   width : 67%

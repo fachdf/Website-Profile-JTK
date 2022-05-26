@@ -52,7 +52,7 @@
         <h3 class="font-weight-bold btext"><b>Penghargaan</b></h3>
       </v-btn>
 
-      <v-btn  @click="toBeranda()" text >
+      <v-btn  to="/kerjasama" text >
         <h3 class="font-weight-bold btext"><b>Kerjasama</b></h3>
       </v-btn>
       
@@ -77,7 +77,11 @@ export default {
     data: () => ({
         tentangJTK: [{
                 title: "Sejarah",
-                link: "/sejarah"
+                link: "/riwayatJTK"
+            },
+            {
+                title: "Profil Jurusan",
+                link: "/profiljurusan"
             },
             {
                 title: "Alumni",

@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/riwayat-jtk",
+      "handler": "riwayat-jtk.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/riwayat-jtk",
+      "handler": "riwayat-jtk.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/riwayat-jtk",
+      "handler": "riwayat-jtk.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
