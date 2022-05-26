@@ -9,6 +9,9 @@ import FasilitasKantin from '../views/FasilitasKantin.vue'
 import FasilitasKesehatan from '../views/FasilitasKesehatan.vue'
 import FasilitasLaboratorium from '../views/FasilitasLaboratorium.vue'
 import Kurikulum from '../views/Kurikulum.vue'
+import TracerStudy from '../views/TracerStudy.vue'
+import TracerStudyD4 from '../views/TracerStudyD4.vue'
+import TracerStudyD3 from '../views/TracerStudyD3.vue'
 
 Vue.use(VueRouter)
 
@@ -85,7 +88,22 @@ const routes: Array<RouteConfig> = [
     path: '/kurikulum',
     name: 'Kurikulum',
     component: Kurikulum
-  }
+  },
+  {
+    path: '/tracerStudy',
+    name: 'Tracer Study',
+    component: TracerStudy
+  },
+  {
+    path: '/tracerStudy/tracerStudyD4',
+    name: 'Tracer Study D4',
+    component: TracerStudyD4
+  },
+  {
+    path: '/tracerStudy/tracerStudyD3',
+    name: 'Tracer Study D3',
+    component: TracerStudyD3
+  },
 ]
 
 const router = new VueRouter({

@@ -84,12 +84,12 @@ export default {
                 link: "/profiljurusan"
             },
             {
-                title: "Alumni",
-                link: "/alumni"
-            },
-            {
                 title: "Fasilitas",
                 link: "/fasilitas"
+            },
+            {
+                title: "Tracer Study",
+                link: "/tracerStudy"
             }
         ],
         pendidikan: [{
