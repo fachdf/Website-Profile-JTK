@@ -77,7 +77,7 @@ export default {
     data: () => ({
         tentangJTK: [{
                 title: "Sejarah",
-                link: "/sejarah"
+                link: "/riwayatJTK"
             },
             {
                 title: "Alumni",
