@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "landing_page_carousels",
+  "info": {
+    "name": "LandingPage_Carousel"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "carousel_text": {
+      "type": "string"
+    },
+    "carousel_link": {
+      "type": "string"
+    },
+    "carousel_img": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}
