@@ -25,13 +25,6 @@ import GVideo from "../components/GVideo.vue";
     GFoto,
     GVideo
    },
-
-    data () {
-      return {
-        carousel: []
-      }
-
-    }
   }
 </script>
 
