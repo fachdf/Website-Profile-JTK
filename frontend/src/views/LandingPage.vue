@@ -1,10 +1,12 @@
 <template>
+
     <div>
         <LPCarousel />
         <LPBerita />
         <LPGaleri />
         <LPAgenda/>
     </div>
+
 </template>
 <style>
 .b {
@@ -13,6 +15,7 @@
 </style>
 <script>
 import axios from "axios";
+
 import LPCarousel from "../components/LPCarousel.vue";
 import LPBerita from "../components/LPBerita.vue";
 import LPGaleri from "../components/LPGaleri.vue";
@@ -24,10 +27,12 @@ import LPAgenda from "../components/LPAgenda.vue";
     LPGaleri,
     LPAgenda
    },
+
     data () {
       return {
         carousel: []
       }
+
     }
   }
 </script>
@@ -35,3 +40,4 @@ import LPAgenda from "../components/LPAgenda.vue";
 <style >
 
 </style>
+
