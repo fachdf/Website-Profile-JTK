@@ -69,7 +69,7 @@ import axios from "axios";
    },
    methods: {
     async fetchData() {
-      const carousel = await axios.get("http://localhost:1338/agendas");
+      const carousel = await axios.get("http://localhost:1337/agendas");
       //const logoHeader = await axios.get(this.CMS_API + "/logo-header");
       var i;
       for (let i = 0; i < 5; i++) {
