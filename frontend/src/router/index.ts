@@ -24,6 +24,16 @@ const routes: Array<RouteConfig> = [
     name: 'Gallery',
     component: Gallery
   },
+  {
+    path: '/profiljurusan',
+    name: 'Profil Jurusan',
+    component: () => import(/* webpackChunkName: "about" */ '../views/ProfilJurusan.vue')
+  },
+  {
+    path: '/profilprodiD3',
+    name: 'Profil Prodi D3',
+    component: () => import(/* webpackChunkName: "about" */ '../views/ProfilProdiD3.vue')
+  }
 ]
 
 const router = new VueRouter({
