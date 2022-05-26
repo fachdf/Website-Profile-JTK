@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter, { RouteConfig } from 'vue-router'
 import LandingPage from '../views/LandingPage.vue'
 import Gallery from '../views/Gallery.vue'
+import Kurikulum from '../views/Kurikulum.vue'
 
 Vue.use(VueRouter)
 
@@ -33,6 +34,11 @@ const routes: Array<RouteConfig> = [
     path: '/profilprodiD3',
     name: 'Profil Prodi D3',
     component: () => import(/* webpackChunkName: "about" */ '../views/ProfilProdiD3.vue')
+  },
+  {
+    path: '/kurikulum',
+    name: 'Kurikulum',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Kurikulum.vue')
   }
 ]
 
