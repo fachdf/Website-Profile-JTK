@@ -8,6 +8,8 @@ import FasilitasKelas from '../views/FasilitasKelas.vue'
 import FasilitasKantin from '../views/FasilitasKantin.vue'
 import FasilitasKesehatan from '../views/FasilitasKesehatan.vue'
 import FasilitasLaboratorium from '../views/FasilitasLaboratorium.vue'
+import Kurikulum from '../views/Kurikulum.vue'
+
 Vue.use(VueRouter)
 
 const routes: Array<RouteConfig> = [
@@ -79,6 +81,11 @@ const routes: Array<RouteConfig> = [
     name: 'Fasilitas Laboratorium',
     component: FasilitasLaboratorium
   },
+  {
+    path: '/kurikulum',
+    name: 'Kurikulum',
+    component: Kurikulum
+  }
 ]
 
 const router = new VueRouter({

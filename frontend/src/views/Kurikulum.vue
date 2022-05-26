@@ -1,8 +1,8 @@
 <template>
     <div>
         <LPCarousel/>
-        <GFoto/>
-        <GVideo/>
+        <KurikulumD4/>
+        <KurikulumD3/>
     </div>
 
 </template>
@@ -16,15 +16,16 @@
 <script>
 import axios from "axios";
 import LPCarousel from "../components/LPCarousel.vue";
-import GFoto from "../components/GFoto.vue";
-import GVideo from "../components/GVideo.vue";
+import KurikulumD4 from "../components/KurikulumD4.vue";
+import KurikulumD3 from "../components/KurikulumD3.vue";
 
   export default {
     components: {
     LPCarousel,
-    GFoto,
-    GVideo
+    KurikulumD4,
+    KurikulumD3
    },
+
   }
 </script>
 

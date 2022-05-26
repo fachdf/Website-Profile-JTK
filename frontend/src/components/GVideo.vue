@@ -24,10 +24,10 @@
 
     <v-img
       height="250"
-       :src='carousel.gambar_gallery[0].url'
+       :src='carousel.gambar_gallery[1].url'
     ></v-img>
 
-    <v-card-title>{{carousel.deskripsi_gallery}}</v-card-title>
+    <v-card-title>{{carousel.keterangan_gallery}}</v-card-title>
 
     <v-card-text>
       <v-row
