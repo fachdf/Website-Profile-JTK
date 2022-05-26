@@ -1,0 +1,8 @@
+{
+    "provider": "cloudinary",
+    "providerOptions": {
+        "cloud_name": "kelompok-b7",
+        "api_key":"455425592668344",
+        "api_secret":"gfSD8OJ0jnspqLJpZSRtNlpuPoA"
+    }
+}

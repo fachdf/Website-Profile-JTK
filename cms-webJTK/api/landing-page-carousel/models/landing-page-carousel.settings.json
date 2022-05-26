@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "landing_page_carousels",
   "info": {
-    "name": "Landing Page Carousel"
+    "name": "LandingPage_Carousel"
   },
   "options": {
     "increments": true,
