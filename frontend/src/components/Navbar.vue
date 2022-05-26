@@ -75,18 +75,6 @@ export default {
     name: 'App',
     components:{},
     data: () => ({
-        activate: true,
-        theme: 1,
-        themes: [{
-                text: "Dark",
-                icon: "mdi-clock"
-            },
-            {
-                text: "Light",
-                icon: "mdi-account"
-            }
-        ],
-        mini: true,
         tentangJTK: [{
                 title: "Sejarah",
                 link: "/sejarah"
