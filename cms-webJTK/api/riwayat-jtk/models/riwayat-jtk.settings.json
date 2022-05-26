@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "riwayat_jtks",
+  "info": {
+    "name": "RiwayatJTK",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "riwayatJTK": {
+      "type": "richtext"
+    }
+  }
+}
