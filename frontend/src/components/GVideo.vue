@@ -1,6 +1,6 @@
 <template>
     <div align="center" class="title">
-      <p class="display-2 mt-2 btext font-weight-bold" >Galeri</p>
+      <p class="display-2 mt-2 btext font-weight-bold" >Video</p>
       <v-sheet
         color="#FF6600"
         height="5"
@@ -44,8 +44,6 @@
             </v-card>
           </v-col>
         </v-row>
-    
-    <v-btn class="white--text mb-6" color="#111F4D" to="/gallery">Selengkapnya</v-btn>
     </div>
 </template>
 <style>
@@ -72,15 +70,10 @@ import axios from "axios";
    methods: {
     async fetchData() {
       const carousel = await axios.get("http://localhost:1337/galleries");
-      //const logoHeader = await axios.get(this.CMS_API + "/logo-header");
       var i;
       for (let i = 0; i < 5; i++) {
         this.carousel.push(carousel.data[i])
-        //console.log(i)
       }
-      //console.log("ini gambar")
-      //console.log(this.carousel[0].gambar_artikel[0].url)
-      //console.log(this.carousel[1])
     },
     
   },
