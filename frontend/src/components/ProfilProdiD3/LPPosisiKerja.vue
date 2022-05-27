@@ -12,18 +12,18 @@
       </v-sheet>
         <div class="detailjurusan">
             <p align=left class="btext pl-10 mt-10">Hampir semua bidang memerlukan keahlian TI, dengan berbagai kriteria dan kompetensi. Pekerjaan yang Tersedia diantaranya:</p>
-                <br><p class="btext pl-10 font-weight-bold ">OPERATOR</p> 
-                <p class="btext pl-10 mt-10">- Drafter
+                <p class="btext pl-10 font-weight-bold ">OPERATOR</p> 
+                <p class="btext pl-10">- Drafter
                     <br>- Tester
                     <br>- Office Automation
                 </p>
                 <br><p class="btext pl-10 font-weight-bold ">PROGRAMMER</p> 
-                <p class="btext pl-10 mt-10">- Dokumenter
+                <p class="btext pl-10">- Dokumenter
                     <br>- Administrator
                     <br>- Programmer
                 </p>
                 <br><p class="btext pl-10 font-weight-bold ">ANALISIS dan DESIGNER</p>
-                <p class="btext pl-10 mt-10">- Testing Engineer
+                <p class="btext pl-10">- Testing Engineer
                     <br>- Requrement Analyst
                     <br>- Designer
                 </p>

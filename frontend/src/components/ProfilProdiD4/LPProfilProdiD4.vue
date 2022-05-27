@@ -10,6 +10,11 @@
         color="#FF6600"
       > 
       </v-sheet>
+      <v-row
+          class="fill-height ml-9 mt-5"
+          align="right"
+          justify="right" 
+        >
         <div class="detailprodiD4">
             <p align=left class="btext pl-10 mt-10">Perkembangan perekonomian global secara positif telah menjadi tantangan dan peluang bagi semua negara termasuk Indonesia. Selaras dengan perkembangan industri khususnya dibidang Teknologi Informasi dan Komunikasi, serta kebijakan otonomi daerah di Indonesia, setiap institusi dituntut untuk mampu memanfaatkan teknologi dan kebijakan ini secara optimal. Oleh karena itu setiap institusi secara maksimal perlu mempersiapkan sumber daya manusianya sehingga memadai, baik dari segi kuantitas maupun kualitasnya.
                 <br><br>Institusi pendidikan tinggi merupakan lembaga utama dalam menciptakan para calon praktisi dalam di industri.
@@ -17,7 +22,22 @@
                 <br><br>Seiring dengan pemanfaatan perangkat lunak diberbagai bidang kehidupan dan KEPMEN 232/U/2000, maka Indonesia banyak memerlukan tenaga ahli yang mampu melaksanakan pekerjaan yang kompleks berdasarkan kemampuan profesional dibidang informatika.
                 <br><br>Untuk itu, pada Juli 2009 didirikanlah program pendidikan D IV bidang informatika  di Jurusan Teknik Komputer dan Informatika  untuk menjawab kebutuhan terhadap penyediaan SDM yang berkaitan dengan produksi dan pemanfaatan perangkat lunak. Program studi ini dikukuhkan melalui SK Penyelenggaraan  Program Studi : dari Dikti dengan nomor 1265/D/T/2009.
             </p>
-        </div> 
+        </div>
+
+        <div class=" black--text text-h3 " align="right"
+          justify="right">
+            <v-img
+                class="ml-15"
+                margin-left="10"
+                max-height="500"
+                max-width="600"
+                src="https://res.cloudinary.com/kelompok-b7/image/upload/v1653569101/sarana_papan_jurusan_560x300_7df440b18e.jpg"
+            ></v-img>
+            
+        </div>
+        </v-row>
+
+         
         <v-sheet
         height="50"
         width="100%"
@@ -33,6 +53,6 @@
 }
 .detailprodiD4{
     align-content: left;
-    width: 67%
+    width: 50%
 }
 </style>
