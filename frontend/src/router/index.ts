@@ -12,6 +12,7 @@ import Kurikulum from '../views/Kurikulum.vue'
 import TracerStudy from '../views/TracerStudy.vue'
 import TracerStudyD4 from '../views/TracerStudyD4.vue'
 import TracerStudyD3 from '../views/TracerStudyD3.vue'
+import DaftarPrestasi from '../views/DaftarPrestasi.vue'
 
 Vue.use(VueRouter)
 
@@ -103,6 +104,11 @@ const routes: Array<RouteConfig> = [
     path: '/tracerStudy/tracerStudyD3',
     name: 'Tracer Study D3',
     component: TracerStudyD3
+  },
+  {
+    path: '/daftarPrestasi',
+    name: 'Daftar Prestasi',
+    component: DaftarPrestasi
   },
 ]
 

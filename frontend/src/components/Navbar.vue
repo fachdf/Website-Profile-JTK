@@ -48,7 +48,7 @@
                 </v-list>
       </v-menu>
 
-      <v-btn  @click="toBeranda()" text >
+      <v-btn  to="/daftarPrestasi" text >
         <h3 class="font-weight-bold btext"><b>Penghargaan</b></h3>
       </v-btn>
 
