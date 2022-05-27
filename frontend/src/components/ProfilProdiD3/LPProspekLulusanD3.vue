@@ -1,5 +1,11 @@
 <template>
  <div class="title">
+   <v-sheet
+        height="50"
+        width="100%"
+        color="white"
+      > 
+      </v-sheet>
       <p class="display-2 mt-10 pl-10 btext font-weight-bold" >Prospek Lulusan</p>
       <v-sheet
         elevation="1"

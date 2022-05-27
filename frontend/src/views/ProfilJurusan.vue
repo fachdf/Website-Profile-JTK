@@ -39,7 +39,6 @@
   ></v-breadcrumbs>
   <LPProfilJTK />
   <LPRiwayat />
-  <LPProfilProdi />
   <LPVisiMisi />
 
 </div>
@@ -55,13 +54,11 @@ import axios from "axios";
 import LPCarousel from "../components/LPCarousel.vue"
 import LPProfilJTK from "../components/LPProfilJTK.vue"
 import LPRiwayat from "../components/LPRiwayat.vue"
-import LPProfilProdi from "../components/LPProfilProdi.vue"
 import LPVisiMisi from "../components/LPVisiMisi.vue"
   export default {
     components: {
       LPProfilJTK,
       LPRiwayat,
-      LPProfilProdi,
       LPVisiMisi,
     },
    data () {

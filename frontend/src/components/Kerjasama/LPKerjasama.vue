@@ -71,8 +71,8 @@
 
         <v-row
           class="fill-height ml-9 mt-5"
-          align="left"
-          justify="left" 
+          align="center"
+          justify="center" 
         >
         <div class=" black--text text-h3 " align="left"
           justify="left">

@@ -1,6 +1,6 @@
 <template>
  <div align = right class="title">
-      <p class="display-2 ml-10 mt-10 btext font-weight-bold" >Fasilitas</p>
+      <p class="display-2 mr-10 mt-10 btext font-weight-bold" >Fasilitas</p>
           <v-sheet
             elevation="1"
             padding-left="10"
@@ -20,17 +20,16 @@
             <v-img
                 class="ml-15"
                 margin-left="5"
-                max-height="400"
-                max-width="600"
+                height="400"
+                width="600"
                 src="https://res.cloudinary.com/kelompok-b7/image/upload/v1653572229/lab_e3c81fd48c.png"
             ></v-img>
         </div>
         <div align=right class="fasilitas">
-          
-          <p align= left class="btext ml-10 mt-15">- Laboratorium Rekayasa Perangkat Lunak
-                <br> - Laboratorium Sistem Informasi dan Basis Data
-                <br> - Laboratorium Multimedia
-                <br> - Laboratorium Jaringan dan Teknologi Informasi
+          <p align= left class="btext ml-10 mt-15">1. Laboratorium Rekayasa Perangkat Lunak
+                <br>2. Laboratorium Sistem Informasi dan Basis Data
+                <br>3. Laboratorium Multimedia
+                <br>4. Laboratorium Jaringan dan Teknologi Informasi
             </p>
         </div>
             

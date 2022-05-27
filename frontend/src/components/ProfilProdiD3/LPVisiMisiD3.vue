@@ -23,7 +23,7 @@
       > 
       </v-sheet>
     <div align = center class="visi">
-       <p align=center class="text-xl btext mt-20 pt-20">Menjadi Program Studi unggulan dan terdepan dalam program pendidikan Diploma III Teknik Informatika yang diakui baik di tingkat nasional maupun internasional pada tahun 2025. </p>
+       <h3 align=center class="text-xl btext mt-20 pt-20">Menjadi Program Studi unggulan dan terdepan dalam program pendidikan Diploma III Teknik Informatika yang diakui baik di tingkat nasional maupun internasional pada tahun 2025. </h3>
     </div>
     <v-sheet
         height="20"
@@ -31,7 +31,7 @@
         color="white"
       > 
       </v-sheet>
-    <p align=center class="display-2 mt-20 btext font-weight-bold" >Misi Program Studi</p> 
+    <p align=center class="display-2 mt-10 btext font-weight-bold" >Misi Program Studi</p> 
     <v-sheet
     color="#FF6600"
     elevation="1"
@@ -44,9 +44,9 @@
     height = "200"
     width = "67%">
     <div align = center class="misi">
-        <p align=left class="heading-4 btext  mt-10">- Menyelenggarakan program pendidikan Diploma III Teknik Informatika yang diakui baik di tingkat nasional maupun internasional.
+        <h3 align=left class="heading-4 btext  mt-10">- Menyelenggarakan program pendidikan Diploma III Teknik Informatika yang diakui baik di tingkat nasional maupun internasional.
         <br><br>- Melakukan penelitian terapan yang dapat digunakan oleh Industri, Institusi atau Masyarakat baik ditingkat nasional maupun internasional
-        <br><br>- Melaksanakan pengabdian kepada masyarakat pada lingkup lokal, regional dan nasional.</p>
+        <br><br>- Melaksanakan pengabdian kepada masyarakat pada lingkup lokal, regional dan nasional.</h3>
         </div>
     </v-sheet>
        
