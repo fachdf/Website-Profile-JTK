@@ -10,7 +10,12 @@
         color="#FF6600"
       > 
       </v-sheet>
-        <div class="detailjurusan">
+      <v-row
+          class="fill-height ml-9 mt-5"
+          align="right"
+          justify="right" 
+        >
+        <div class="detailkerja">
             <p align=left class="btext pl-10 mt-10">Lulusan dari program studi ini berpotensi untuk bekerja pada kelompok bidang perkerjaan berikut :
                 <br><br> - Senior Analyst
                 <br> - System Developer
@@ -18,6 +23,19 @@
                 <br> - Manager IT
             </p>
         </div> 
+
+        <div class=" black--text text-h3 " align="right"
+          justify="right">
+            <v-img
+                class="ml-15"
+                margin-left="10"
+                max-height="500"
+                max-width="600"
+                src="https://res.cloudinary.com/kelompok-b7/image/upload/v1653614395/sofware_developer_26e92993ac.jpg"
+            ></v-img>
+            
+        </div>
+        </v-row>
         <v-sheet
         height="50"
         width="100%"
@@ -31,8 +49,8 @@
 .tittle{
     width:67%
 }
-.detailjurusan{
+.detailkerja{
     align-content: left;
-    width: 67%
+    width: 60%
 }
 </style>
