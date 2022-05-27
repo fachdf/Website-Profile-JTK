@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  frontend:
+    container_name: frontend
+    image: frontend
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    networks:
+      - default
+  
+  cms-webJTK:
+    container_name: cms-webJTK
+    image: cms-geowisata
+    build:
+      context: cms-geowisata
+      dockerfile: Dockerfile
+    command: ["yarn", "start"]
