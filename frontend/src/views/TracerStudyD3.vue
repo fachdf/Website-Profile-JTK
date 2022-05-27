@@ -68,7 +68,7 @@
 
 </style>
 <script>
-import axios from "axios";
+//import axios from "axios";
 import TCD3Kelulusan from "../components/TracerStudyD3/TCD3Kelulusan.vue";
 import TCD3Sebaran from "../components/TracerStudyD3/TCD3Sebaran.vue";
 
