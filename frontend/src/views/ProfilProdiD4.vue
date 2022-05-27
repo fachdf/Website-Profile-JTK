@@ -92,7 +92,7 @@ import LPFasilitasD4 from "../components/ProfilProdiD4/LPFasilitasD4.vue"
         },
         {
           text: 'Profil Jurusan',
-          disabled: true,
+          disabled: false,
           href: '/profiljurusan',
         },
         {

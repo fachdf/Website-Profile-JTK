@@ -84,7 +84,7 @@ import LPPosisiKerja from "../components/ProfilProdiD3/LPPosisiKerja.vue"
         },
         {
           text: 'Profil Jurusan',
-          disabled: true,
+          disabled: false,
           href: '/profiljurusan',
         },
         {
