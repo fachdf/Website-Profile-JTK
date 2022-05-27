@@ -68,7 +68,7 @@
 
 </style>
 <script>
-import axios from "axios";
+// import axios from "axios";
 import TCD4Kelulusan from "../components/TracerStudyD4/TCD4Kelulusan.vue";
 import TCD4Sebaran from "../components/TracerStudyD4/TCD4Sebaran.vue";
 
@@ -80,7 +80,7 @@ import TCD4Sebaran from "../components/TracerStudyD4/TCD4Sebaran.vue";
 
     data () {
       return {
-        carousel: [],
+        // carousel: [],
         colors: [
           'indigo',
           'warning',
@@ -109,9 +109,7 @@ import TCD4Sebaran from "../components/TracerStudyD4/TCD4Sebaran.vue";
           disabled: true,
           href: '/tracerStudyD4',
         }
-      ],
-      riwayatJTK_text : ""
-        
+      ]        
       }
 
     },
