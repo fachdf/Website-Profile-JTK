@@ -336,6 +336,7 @@ import axios from "axios";
     data () {
       return {
         carousel: [],
+        CMS_API: process.env.VUE_APP_CMS_API,
         colors: [
           'indigo',
           'warning',
@@ -370,7 +371,7 @@ import axios from "axios";
    },
    methods: {
     async fetchData() {
-      const riwayat = await axios.get("http://localhost:1337/riwayat-jtk");
+      const riwayat = await axios.get(this.CMS_API + "riwayat-jtk");
       //const logoHeader = await axios.get(this.CMS_API + "/logo-header");
       var i;
       this.riwayatJTK_text = riwayat.data.riwayatJTK
