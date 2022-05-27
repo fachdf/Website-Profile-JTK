@@ -10,10 +10,9 @@
      </v-toolbar-title>
   <footer class="absolute w-full bottom-0 bg-gray-900 pb-6">
     <div class="container mx-auto px-4">
-      <hr class="mb-6 border-b-1 border-gray-700" />
       <div class="flex flex-wrap items-center md:justify-between justify-center">
         <div class="w-full md:w-8/12 px-4">
-          <ul class="sigius">
+          <ul class="footer">
             <li>
               <h3 class="font-weight-bold btext"><b>Tentang JTK</b></h3>
             </li>
@@ -24,7 +23,7 @@
               <h3 class="font-weight-bold btext"><a href="/daftarPrestasi" style="margin-left: 70px; color: #111F4D; text-decoration: none"><b>Penghargaan</b></a></h3>
             </li>
             <li>
-              <h3 class="font-weight-bold btext"><a href="/kerjasama" style="margin-left: 70px; color: #111F4D; text-decoration: none"><b>Kerja Sama</b></a></h3>
+              <h3 class="font-weight-bold btext"><a href="/kerjasama" style="margin-left: 70px; color: #111F4D; text-decoration: none"><b>Kerjasama</b></a></h3>
             </li>
             <li>
               <h3 class="font-weight-bold btext"><a href="/#" style="margin-left: 70px; color: #111F4D; text-decoration: none"><b>Kontak</b></a></h3>
@@ -32,7 +31,7 @@
           </ul>
         </div>
         
-        <ul class="sigius">
+        <ul class="footer">
             <li style="margin-left: -22px">
               <div class="w-full md:w-8/12 px-4">
               <ul
@@ -110,7 +109,7 @@
 </template>
 
 <style>
-.sigius li {
+.footer li {
   display: inline;
   float: left;
 }
