@@ -72,7 +72,7 @@ import axios from "axios";
    },
    methods: {
     async fetchData() {
-      const carousel = await axios.get(this.CMS_API + "/galleries");
+      const carousel = await axios.get("http://103.134.154.227:1337/galleries");
       //const logoHeader = await axios.get(this.CMS_API + "/logo-header");
       var i;
       for (let i = 0; i < 5; i++) {

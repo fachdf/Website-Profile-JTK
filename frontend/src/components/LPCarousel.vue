@@ -46,7 +46,7 @@ import axios from "axios";
    },
    methods: {
     async fetchData() {
-      const carousel = await axios.get(this.CMS_API + "/landing-page-carousels");
+      const carousel = await axios.get("http://103.134.154.227:1337/landing-page-carousels");
       //const logoHeader = await axios.get(this.CMS_API + "/logo-header");
       this.carousel = carousel.data;
     },
