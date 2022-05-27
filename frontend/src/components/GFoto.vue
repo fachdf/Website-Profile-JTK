@@ -61,7 +61,8 @@ import axios from "axios";
   export default {
     data () {
       return {
-        carousel: []
+        carousel: [],
+        CMS_API: process.env.VUE_APP_CMS_API,
       }
     },
     beforeMount() {
@@ -69,7 +70,7 @@ import axios from "axios";
    },
    methods: {
     async fetchData() {
-      const carousel = await axios.get("http://localhost:1337/galleries");
+      const carousel = await axios.get(this.CMS_API + "/galleries");
       var i;
       for (let i = 0; i < 5; i++) {
         this.carousel.push(carousel.data[i])
