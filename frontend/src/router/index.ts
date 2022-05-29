@@ -1,20 +1,22 @@
-import Vue from 'vue'
-import VueRouter, { RouteConfig } from 'vue-router'
-import LandingPage from '../views/LandingPage.vue'
-import Gallery from '../views/Gallery.vue'
-import RiwayatJTK from '../views/RiwayatJTK.vue'
-import Fasilitas from '../views/Fasilitas.vue'
-import FasilitasKelas from '../views/FasilitasKelas.vue'
-import FasilitasKantin from '../views/FasilitasKantin.vue'
-import FasilitasKesehatan from '../views/FasilitasKesehatan.vue'
-import FasilitasLaboratorium from '../views/FasilitasLaboratorium.vue'
-import Kurikulum from '../views/Kurikulum.vue'
-import TracerStudy from '../views/TracerStudy.vue'
-import TracerStudyD4 from '../views/TracerStudyD4.vue'
-import TracerStudyD3 from '../views/TracerStudyD3.vue'
-import DaftarPrestasi from '../views/DaftarPrestasi.vue'
+import Vue from 'vue';
+import VueRouter, { RouteConfig } from 'vue-router';
+import Embed from 'v-video-embed';
+import LandingPage from '../views/LandingPage.vue';
+import Gallery from '../views/Gallery.vue';
+import RiwayatJTK from '../views/RiwayatJTK.vue';
+import Fasilitas from '../views/Fasilitas.vue';
+import FasilitasKelas from '../views/FasilitasKelas.vue';
+import FasilitasKantin from '../views/FasilitasKantin.vue';
+import FasilitasKesehatan from '../views/FasilitasKesehatan.vue';
+import FasilitasLaboratorium from '../views/FasilitasLaboratorium.vue';
+import Kurikulum from '../views/Kurikulum.vue';
+import TracerStudy from '../views/TracerStudy.vue';
+import TracerStudyD4 from '../views/TracerStudyD4.vue';
+import TracerStudyD3 from '../views/TracerStudyD3.vue';
+import DaftarPrestasi from '../views/DaftarPrestasi.vue';
 
 Vue.use(VueRouter)
+Vue.use(Embed)
 
 const routes: Array<RouteConfig> = [
   {
