@@ -5,7 +5,7 @@
       <v-img
         max-height="500"
         max-width="600"
-        src="https://res.cloudinary.com/kelompok-b7/image/upload/v1653569101/sarana_papan_jurusan_560x300_7df440b18e.jpg">
+        src="https://res.cloudinary.com/kelompok-b7/image/upload/v1653803135/tc_d4_2_03ad152471.png">
       </v-img>
       <v-sheet
         height="20"
