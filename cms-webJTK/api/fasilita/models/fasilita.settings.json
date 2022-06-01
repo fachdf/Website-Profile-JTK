@@ -1,14 +1,14 @@
 {
   "kind": "collectionType",
-  "collectionName": "fasilitas",
+  "collectionName": "facilities",
   "info": {
-    "name": "Prasarana",
+    "name": "Facility",
     "description": ""
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {

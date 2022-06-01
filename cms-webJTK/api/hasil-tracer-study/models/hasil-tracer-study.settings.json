@@ -1,35 +1,37 @@
 {
   "kind": "collectionType",
-  "collectionName": "hasil_tracer_studies",
+  "collectionName": "tracer-studies",
   "info": {
-    "name": "HasilTracerStudy"
+    "name": "Tracer Study",
+    "description": ""
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
-    "judul_hasilTracerStudy": {
-      "type": "string",
-      "required": true
-    },
-    "deskripsi_hasilTracerStudy": {
+    "graduation_description": {
       "type": "richtext",
       "required": true
     },
-    "grafik_hasilTracerStudy": {
+    "graphs": {
       "collection": "file",
       "via": "related",
       "allowedTypes": [
-        "files",
-        "images",
-        "videos"
+        "images"
       ],
       "plugin": "upload",
       "required": true,
       "pluginOptions": {}
+    },
+    "job_description": {
+      "type": "richtext",
+      "required": true
+    },
+    "title": {
+      "type": "string"
     }
   }
 }

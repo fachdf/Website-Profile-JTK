@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "profil-prodi",
+  "collectionName": "study-program-profile",
   "info": {
-    "name": "Profil Prodi",
+    "name": "Study Program Profile",
     "description": ""
   },
   "options": {

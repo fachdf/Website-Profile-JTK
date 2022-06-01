@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "employee-profiles",
+  "collectionName": "videos",
   "info": {
-    "name": "Employee Profile",
+    "name": "Video",
     "description": ""
   },
   "options": {
@@ -12,15 +12,14 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "kontak_pegawai": {
+    "link": {
       "type": "string",
-      "required": true,
-      "minLength": 1
+      "required": true
     },
-    "jabatan_pegawai": {
+    "title": {
       "type": "string",
       "required": true,
-      "minLength": 1
+      "maxLength": 50
     }
   }
 }

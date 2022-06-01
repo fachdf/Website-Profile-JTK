@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/tracer-studies",
-      "handler": "hasil-tracer-study.find",
+      "path": "/creativity-weeks",
+      "handler": "creativity-week.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/tracer-studies/count",
-      "handler": "hasil-tracer-study.count",
+      "path": "/creativity-weeks/count",
+      "handler": "creativity-week.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/tracer-studies/:id",
-      "handler": "hasil-tracer-study.findOne",
+      "path": "/creativity-weeks/:id",
+      "handler": "creativity-week.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/tracer-studies",
-      "handler": "hasil-tracer-study.create",
+      "path": "/creativity-weeks",
+      "handler": "creativity-week.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/tracer-studies/:id",
-      "handler": "hasil-tracer-study.update",
+      "path": "/creativity-weeks/:id",
+      "handler": "creativity-week.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/tracer-studies/:id",
-      "handler": "hasil-tracer-study.delete",
+      "path": "/creativity-weeks/:id",
+      "handler": "creativity-week.delete",
       "config": {
         "policies": []
       }
