@@ -24,10 +24,10 @@
 
     <v-img
       height="250"
-       :src='carousel.image[0].url'
+       :src='carousel.image.url'
     ></v-img>
 
-    <v-card-title>{{carousel.description}}</v-card-title>
+    <v-card-title style="font-size:18px">{{carousel.caption}}</v-card-title>
 
     <v-card-text>
       <v-row
@@ -37,7 +37,7 @@
       >
         <v-icon>mdi-calendar-blank</v-icon>
         <div class="grey--text ms-4">
-          {{carousel.date}}
+          {{  moment(carousel.updatedAt).format("DD-MM-YYYY") }}
         </div>
       </v-row>
     </v-card-text>
@@ -59,12 +59,14 @@
 </style>
 <script>
 import axios from "axios";
+import moment from 'moment';
 
   export default {
     data () {
       return {
         carousel: [],
-         CMS_API: process.env.VUE_APP_CMS_API,
+        moment,
+         CMS_API: process.env.VUE_APP_CMS_API
       }
     },
     beforeMount() {
