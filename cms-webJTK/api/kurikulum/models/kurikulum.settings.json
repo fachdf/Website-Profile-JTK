@@ -1,8 +1,9 @@
 {
   "kind": "collectionType",
-  "collectionName": "kurikulum",
+  "collectionName": "curriculums",
   "info": {
-    "name": "Kurikulum"
+    "name": "Curriculum",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -11,22 +12,22 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "judul": {
-      "type": "string"
+    "title": {
+      "type": "string",
+      "required": true
     },
-    "deskripsi": {
-      "type": "richtext"
+    "description": {
+      "type": "richtext",
+      "required": true
     },
-    "gambar": {
-      "collection": "file",
+    "image": {
+      "model": "file",
       "via": "related",
       "allowedTypes": [
-        "images",
-        "files",
-        "videos"
+        "images"
       ],
       "plugin": "upload",
-      "required": false,
+      "required": true,
       "pluginOptions": {}
     }
   }

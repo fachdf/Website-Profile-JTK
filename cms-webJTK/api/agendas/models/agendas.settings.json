@@ -2,13 +2,13 @@
   "kind": "collectionType",
   "collectionName": "agendas",
   "info": {
-    "name": "agendas",
+    "name": "Agendas",
     "description": ""
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {

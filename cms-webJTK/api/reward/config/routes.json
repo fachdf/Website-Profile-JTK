@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/tracer-studies",
-      "handler": "hasil-tracer-study.find",
+      "path": "/rewards",
+      "handler": "reward.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/tracer-studies/count",
-      "handler": "hasil-tracer-study.count",
+      "path": "/rewards/count",
+      "handler": "reward.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/tracer-studies/:id",
-      "handler": "hasil-tracer-study.findOne",
+      "path": "/rewards/:id",
+      "handler": "reward.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/tracer-studies",
-      "handler": "hasil-tracer-study.create",
+      "path": "/rewards",
+      "handler": "reward.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/tracer-studies/:id",
-      "handler": "hasil-tracer-study.update",
+      "path": "/rewards/:id",
+      "handler": "reward.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/tracer-studies/:id",
-      "handler": "hasil-tracer-study.delete",
+      "path": "/rewards/:id",
+      "handler": "reward.delete",
       "config": {
         "policies": []
       }

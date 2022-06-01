@@ -2,27 +2,24 @@
   "kind": "collectionType",
   "collectionName": "videos",
   "info": {
-    "name": "Video"
+    "name": "Video",
+    "description": ""
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
-    "video": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
+    "link": {
+      "type": "string",
+      "required": true
     },
-    "caption": {
-      "type": "string"
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50
     }
   }
 }

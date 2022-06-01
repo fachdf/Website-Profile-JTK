@@ -1,5 +1,10 @@
 <template>
   <div align="center" class="title">
+    <v-sheet
+      height="50"
+      width="100%"
+      color="white">
+    </v-sheet> 
     <p class="display-2 mt-2 btext font-weight-bold" >Video</p>
     <v-sheet
       color="#FF6600"
@@ -8,20 +13,24 @@
     </v-sheet>
     <v-row no-gutters class="my-3">
       <v-col
-        v-for="(carousel, i) in this.carousel"
+        v-for="(videos, i) in this.videos"
           :key="i"
           sm="4"
           class="mx-auto">
         <v-card
           :loading="loading"
-          class="mx-auto my-12"
+          class="mx-auto my-6"
           max-width="450">
-          <v-img
-            max-height="300"
-            :src='carousel.gambar_gallery[0].url'>
-          </v-img>
-          <v-card-title align="left">
-            {{carousel.keterangan_gallery}}
+          <v-sheet
+            height="30"
+            width="100%"
+            color="white">
+          </v-sheet> 
+          <video-embed css="embed-responsive-16by9"
+            :src='videos.link'>
+          </video-embed>
+          <v-card-title align="left" style="font-size:19px">
+            {{videos.title}}
           </v-card-title>
           <v-card-text>
             <v-row
@@ -29,7 +38,7 @@
               class="mx-0 mt-2">
               <v-icon>mdi-calendar-blank</v-icon>
               <div class="grey--text ms-4">
-                {{carousel.tanggal_gallery}}
+                {{ moment(videos.updatedAt).format("DD-MM-YYYY") }}
               </div>
             </v-row>
           </v-card-text>
@@ -50,11 +59,13 @@
 
 <script>
   import axios from "axios";
+  import moment from "moment";
   
   export default {    
     data () {
       return {
-        carousel: [],
+        videos: [],
+        moment: moment,
         CMS_API: process.env.VUE_APP_CMS_API,
       }
     },
@@ -63,12 +74,13 @@
     },
     methods: {
       async fetchData() {
-        const carousel = await axios.get("http://103.134.154.227:1337/galleries");
-        const len = await axios.get("http://103.134.154.227:1337/galleries/count")
+        const videos = await axios.get("http://103.134.154.227:1337/videos");
+        const len = await axios.get("http://103.134.154.227:1337/videos/count");
+        // const videos = await axios.get("http://localhost:1337/videos");
+        // const len = await axios.get("http://localhost:1337/videos/count");
 
-        var i;
-        for (let i = 0; i < 2; i++) {
-          this.carousel.push(carousel.data[i])
+        for (let i = 0; i < len.data; i++) {
+          this.videos.push(videos.data[i])
         }
       },
     }

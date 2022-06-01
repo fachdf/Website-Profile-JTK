@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "galleries",
+  "collectionName": "rewards",
   "info": {
-    "name": "Gallery",
-    "description": ""
+    "name": "Reward"
   },
   "options": {
     "increments": true,
@@ -12,8 +11,8 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "caption": {
-      "type": "text",
+    "title": {
+      "type": "string",
       "required": true,
       "maxLength": 50
     },
@@ -29,8 +28,7 @@
     },
     "description": {
       "type": "richtext",
-      "required": true,
-      "maxLength": 370
+      "required": true
     }
   }
 }

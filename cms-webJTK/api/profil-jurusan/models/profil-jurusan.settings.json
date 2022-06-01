@@ -1,8 +1,9 @@
 {
   "kind": "collectionType",
-  "collectionName": "profil-jurusan",
+  "collectionName": "major-profiles",
   "info": {
-    "name": "Profil Jurusan"
+    "name": "Major Profile",
+    "description": ""
   },
   "options": {
     "increments": true,

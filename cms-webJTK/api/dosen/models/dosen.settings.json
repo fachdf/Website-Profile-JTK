@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "dosen",
+  "collectionName": "lecturers",
   "info": {
-    "name": "Dosen",
+    "name": "Lecturer",
     "description": ""
   },
   "options": {

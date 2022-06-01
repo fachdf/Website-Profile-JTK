@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/daftar-prestasis",
-      "handler": "daftar-prestasi.find",
+      "path": "/achievements",
+      "handler": "achievement.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/daftar-prestasis/count",
-      "handler": "daftar-prestasi.count",
+      "path": "/achievements/count",
+      "handler": "achievement.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/daftar-prestasis/:id",
-      "handler": "daftar-prestasi.findOne",
+      "path": "/achievements/:id",
+      "handler": "achievement.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/daftar-prestasis",
-      "handler": "daftar-prestasi.create",
+      "path": "/achievements",
+      "handler": "achievement.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/daftar-prestasis/:id",
-      "handler": "daftar-prestasi.update",
+      "path": "/achievements/:id",
+      "handler": "achievement.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/daftar-prestasis/:id",
-      "handler": "daftar-prestasi.delete",
+      "path": "/achievements/:id",
+      "handler": "achievement.delete",
       "config": {
         "policies": []
       }

@@ -1,13 +1,14 @@
 {
   "kind": "collectionType",
-  "collectionName": "profile_pegawais",
+  "collectionName": "employee-profiles",
   "info": {
-    "name": "Profile Pegawai"
+    "name": "Employee Profile",
+    "description": ""
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {

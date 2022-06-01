@@ -42,12 +42,12 @@
       return {
         fasilitas: [
           {
-            gambar_fasilitas : "https://res.cloudinary.com/kelompok-b7/image/upload/v1653572229/lab_e3c81fd48c.png",
+            gambar_fasilitas : "https://res.cloudinary.com/kelompok-b7/image/upload/v1654059082/d3_cover_42f99ce499.jpg",
             nama_fasilitas : "D3 Teknik Informatika",
             link : "/tracerStudy/tracerStudyD3"
           },
           {
-            gambar_fasilitas : "https://res.cloudinary.com/kelompok-b7/image/upload/v1653572229/lab_e3c81fd48c.png",
+            gambar_fasilitas : "https://res.cloudinary.com/kelompok-b7/image/upload/v1654059082/d4_cover_74ed63b59a.jpg",
             nama_fasilitas : "D4 Teknik Informatika",
             link : "/tracerStudy/tracerStudyD4"
           }

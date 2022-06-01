@@ -1,8 +1,8 @@
 {
   "kind": "singleType",
-  "collectionName": "riwayat_jtks",
+  "collectionName": "jtk-history",
   "info": {
-    "name": "RiwayatJTK",
+    "name": "History",
     "description": ""
   },
   "options": {
@@ -12,8 +12,9 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "riwayatJTK": {
-      "type": "richtext"
+    "Description": {
+      "type": "richtext",
+      "required": true
     }
   }
 }
