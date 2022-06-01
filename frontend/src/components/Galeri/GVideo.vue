@@ -74,8 +74,8 @@
     },
     methods: {
       async fetchData() {
-        const videos = await axios.get("http://103.134.154.227:1337/videos");
-        const len = await axios.get("http://103.134.154.227:1337/videos/count");
+        const videos = await axios.get("http://103.226.138.60:1337/videos");
+        const len = await axios.get("http://103.226.138.60:1337/videos/count");
         // const videos = await axios.get("http://localhost:1337/videos");
         // const len = await axios.get("http://localhost:1337/videos/count");
 

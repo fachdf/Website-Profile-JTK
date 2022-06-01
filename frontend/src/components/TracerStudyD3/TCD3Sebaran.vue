@@ -46,7 +46,7 @@
     },
     methods: {
       async fetchData() {
-        const tracer = await axios.get("http://103.134.154.227:1337/tracer-studies/6296d79bb2986f07f4a4cbfb");
+        const tracer = await axios.get("http://103.226.138.60:1337/tracer-studies/6296d79bb2986f07f4a4cbfb");
         // const tracer = await axios.get("http://localhost:1337/tracer-studies/6296d79bb2986f07f4a4cbfb");
         this.tracer = tracer.data;
       },

@@ -103,8 +103,8 @@
     },
     methods: {
       async fetchData() {
-        const photos = await axios.get("http://103.134.154.227:1337/galleries");
-        const len = await axios.get("http://103.134.154.227:1337/galleries/count");
+        const photos = await axios.get("http://103.226.138.60:1337/galleries");
+        const len = await axios.get("http://103.226.138.60:1337/galleries/count");
         // const photos = await axios.get("http://localhost:1337/galleries");
         // const len = await axios.get("http://localhost:1337/galleries/count");
 

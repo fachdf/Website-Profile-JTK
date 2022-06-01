@@ -103,8 +103,8 @@
     },
     methods: {
       async fetchData() {
-        const achievements = await axios.get("http://103.134.154.227:1337/achievements");
-        const len = await axios.get("http://103.134.154.227:1337/achievements/count");
+        const achievements = await axios.get("http://103.226.138.60:1337/achievements");
+        const len = await axios.get("http://103.226.138.60:1337/achievements/count");
         // const achievements = await axios.get("http://localhost:1337/achievements");
         // const len = await axios.get("http://localhost:1337/achievements/count");
 

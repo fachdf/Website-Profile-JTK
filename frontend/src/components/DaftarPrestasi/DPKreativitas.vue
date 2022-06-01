@@ -108,8 +108,8 @@
     },
     methods: {
       async fetchData() {
-        const creativities = await axios.get("http://103.134.154.227:1337/creativity-weeks");
-        const len = await axios.get("http://103.134.154.227:1337/creativity-weeks/count");
+        const creativities = await axios.get("http://103.226.138.60:1337/creativity-weeks");
+        const len = await axios.get("http://103.226.138.60:1337/creativity-weeks/count");
         // const creativities = await axios.get("http://localhost:1337/creativity-weeks");
         // const len = await axios.get("http://localhost:1337/creativity-weeks/count");
 
