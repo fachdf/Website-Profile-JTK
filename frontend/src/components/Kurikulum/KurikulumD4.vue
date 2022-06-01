@@ -13,11 +13,13 @@
       color="white"> 
     </v-sheet>
     <v-img
-      max-height="500"
+      max-height="800"
       max-width="600"
-      src="https://res.cloudinary.com/kelompok-b7/image/upload/v1653569101/sarana_papan_jurusan_560x300_7df440b18e.jpg">
+      :src='kurikulum.image.url'>
     </v-img>
-    <p align=left class="btext mt-5" style="width:70%">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultrices bibendum nunc. Fusce dictum dui enim, sit amet ultricies odio dictum id. Curabitur dapibus dui velit, quis iaculis urna mollis eu. In dictum turpis eu commodo consectetur. Curabitur feugiat lectus ac urna placerat, a dignissim sem pretium. Praesent ac luctus ipsum. Pellentesque consectetur tellus eu molestie tincidunt. Phasellus pellentesque ante vitae risus vulputate hendrerit. Curabitur ullamcorper vel magna convallis dignissim.</p>
+    <!-- <p align=left class="btext mt-5" style="width:70%">
+      {{ kurikulum.description }}
+    </p> -->
     <v-sheet
       height="30"
       width="100%"
@@ -31,3 +33,27 @@
       width:100%;
   }
 </style>
+
+<script>
+  import axios from "axios";
+  var kurikulum;
+  
+  export default {    
+    data () {
+      return {
+        kurikulum,
+        CMS_API: process.env.VUE_APP_CMS_API
+      }
+    },
+    beforeMount() {
+      this.fetchData();
+    },
+    methods: {
+      async fetchData() {
+        const tracer = await axios.get("http://103.134.154.227:1337/curriculums/6296db194f2eb424b8cb9d6a");
+        // const kurikulum = await axios.get("http://localhost:1337/curriculums/6296db194f2eb424b8cb9d6a");
+        this.kurikulum = kurikulum.data;
+      },
+    }
+  }
+</script>

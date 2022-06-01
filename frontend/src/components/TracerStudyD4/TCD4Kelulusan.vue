@@ -5,14 +5,20 @@
       <v-img
         max-height="500"
         max-width="600"
+<<<<<<< Updated upstream
         src="https://res.cloudinary.com/kelompok-b7/image/upload/v1653569101/sarana_papan_jurusan_560x300_7df440b18e.jpg">
+=======
+        :src='tracer.graphs[0].url'>
+>>>>>>> Stashed changes
       </v-img>
       <v-sheet
         height="20"
         width="100%"
         color="white">
       </v-sheet> 
-      <p align=left class="btext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquam accumsan mauris non ultrices. Vestibulum malesuada consectetur ornare. Phasellus elementum, metus non commodo blandit, ligula neque porta neque, a luctus mi sapien at libero. Cras sit amet eros in tellus tempus porta. Sed bibendum mauris et hendrerit varius. Praesent maximus metus ut nulla tempor, non tempus sapien gravida. Nam vel ultrices lectus, ut iaculis mi. Donec non odio lacus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur cursus nisi lectus, in porta velit molestie sed. Quisque ornare nunc vitae turpis condimentum, eget consequat justo tincidunt. Aenean tincidunt iaculis mi, vitae dignissim elit sodales quis.</p>
+      <p align=left class="btext">
+        {{tracer.graduation_description}}
+      </p>
       <v-sheet
         height="20"
         width="100%"
@@ -27,3 +33,27 @@
       width:70%
   }
 </style>
+
+<script>
+  import axios from "axios";
+  var tracer;
+  
+  export default {    
+    data () {
+      return {
+        tracer,
+        CMS_API: process.env.VUE_APP_CMS_API
+      }
+    },
+    beforeMount() {
+      this.fetchData();
+    },
+    methods: {
+      async fetchData() {
+        const tracer = await axios.get("http://103.134.154.227:1337/tracer-studies/6296d7b8b2986f07f4a4cbfe");
+        // const tracer = await axios.get("http://localhost:1337/tracer-studies/6296d7b8b2986f07f4a4cbfe");
+        this.tracer = tracer.data;
+      },
+    }
+  }
+</script>

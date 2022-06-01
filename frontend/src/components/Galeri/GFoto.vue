@@ -1,14 +1,14 @@
 <template>
   <div align="center" class="title">
-    <p class="display-2 mt-2 btext font-weight-bold" >Mahasiswa Berprestasi</p>
+    <p class="display-2 mt-2 btext font-weight-bold" >Foto</p>
     <v-sheet
       color="#FF6600"
       height="5"
-      width="550">
+      width="155">
     </v-sheet>
     <v-row no-gutters class="my-3">
       <v-col
-        v-for="(achievements, i) in this.achievements"
+        v-for="(photos, i) in this.photos"
           :key="i"
           sm="4"
           class="mx-auto">
@@ -19,16 +19,16 @@
                 <div class="list-complete-item">
                   <router-link :to="'/'+'gallery'">
                     <v-img
-                      max-height="350"
-                      :src='achievements.image.url'>
+                      max-height="300"
+                      :src='photos.image.url'>
                     </v-img>
                     <div class="overlay">
-                      <div class="text">{{ achievements.description }}</div>
+                      <div class="text">{{ photos.description }}</div>
                     </div>
                   </router-link>
                 </div>
               <v-card-title align="left" style="font-size:19px">
-                {{ achievements.title }}
+                {{ photos.caption }}
               </v-card-title>
               <v-card-text>
                 <v-row
@@ -36,7 +36,7 @@
                   class="mx-0 mt-2">
                   <v-icon>mdi-calendar-blank</v-icon>
                   <div class="grey--text ms-4">
-                    {{  moment(achievements.updatedAt).format("DD-MM-YYYY") }}
+                    {{  moment(photos.updatedAt).format("DD-MM-YYYY") }}
                   </div>
                 </v-row>
               </v-card-text>
@@ -93,7 +93,7 @@
   export default {    
     data () {
       return {
-        achievements: [],
+        photos: [],
         moment,
         CMS_API: process.env.VUE_APP_CMS_API,
       }
@@ -103,13 +103,13 @@
     },
     methods: {
       async fetchData() {
-        const achievements = await axios.get("http://103.134.154.227:1337/achievements");
-        const len = await axios.get("http://103.134.154.227:1337/achievements/count");
-        // const achievements = await axios.get("http://localhost:1337/achievements");
-        // const len = await axios.get("http://localhost:1337/achievements/count");
+        const photos = await axios.get("http://103.134.154.227:1337/galleries");
+        const len = await axios.get("http://103.134.154.227:1337/galleries/count");
+        // const photos = await axios.get("http://localhost:1337/galleries");
+        // const len = await axios.get("http://localhost:1337/galleries/count");
 
         for (let i = 0; i < len.data; i++) {
-          this.achievements.push(achievements.data[i])
+          this.photos.push(photos.data[i])
         }
       },
     }
