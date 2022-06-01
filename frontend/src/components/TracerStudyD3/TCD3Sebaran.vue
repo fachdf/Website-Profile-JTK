@@ -5,11 +5,7 @@
       <v-img
         max-height="500"
         max-width="600"
-<<<<<<< Updated upstream
-        src="https://res.cloudinary.com/kelompok-b7/image/upload/v1653569101/sarana_papan_jurusan_560x300_7df440b18e.jpg">
-=======
         :src='tracer.graphs[1].url'>
->>>>>>> Stashed changes
       </v-img>
       <v-sheet
         height="20"
