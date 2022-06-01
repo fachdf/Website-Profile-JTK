@@ -30,7 +30,8 @@ import LPAgenda from "../components/LPAgenda.vue";
 
     data () {
       return {
-        carousel: []
+        carousel: [],
+        CMS_API: process.env.VUE_APP_CMS_API,
       }
 
     }

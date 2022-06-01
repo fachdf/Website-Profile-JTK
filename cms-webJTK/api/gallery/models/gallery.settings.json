@@ -31,6 +31,9 @@
       "type": "richtext",
       "required": true,
       "maxLength": 370
+    },
+    "date": {
+      "type": "date"
     }
   }
 }

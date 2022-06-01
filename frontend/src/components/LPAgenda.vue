@@ -70,12 +70,12 @@ import axios from "axios";
    },
    methods: {
     async fetchData() {
-      const carousel = await axios.get("http://103.134.154.227:1337/agendas");
+      const carousel = await axios.get("http://103.226.138.60:1337/agendas");
+      console.log(this.CMS_API + "/agendas")
       //const logoHeader = await axios.get(this.CMS_API + "/logo-header");
       var i;
       for (let i = 0; i < 3; i++) {
         this.carousel.push(carousel.data[i])
-        console.log(i)
       }
       //console.log("ini gambar")
       //console.log(this.carousel[0].gambar_artikel[0].url)
