@@ -50,7 +50,7 @@
     },
     methods: {
       async fetchData() {
-        const tracer = await axios.get("http://103.226.138.60:1337/curriculums/6296db194f2eb424b8cb9d6a");
+        const kurikulum = await axios.get("http://103.226.138.60:1337/curriculums/6296db194f2eb424b8cb9d6a");
         // const kurikulum = await axios.get("http://localhost:1337/curriculums/6296db194f2eb424b8cb9d6a");
         this.kurikulum = kurikulum.data;
       },
