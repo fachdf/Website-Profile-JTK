@@ -1,3 +1,9 @@
+const Dotenv = require('dotenv-webpack');
+
+
+module.exports = {
+  
+}
 module.exports = {
   transpileDependencies: [
     'vuetify'
@@ -10,5 +16,10 @@ module.exports = {
         maskIcon: 'favicon-2.ico',
         msTileImage: 'favicon-2.ico'
     }
-}
+  },
+  configureWebpack: {
+    plugins: [
+      new Dotenv()
+    ]
+  }
 }

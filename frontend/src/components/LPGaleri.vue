@@ -24,10 +24,10 @@
 
     <v-img
       height="250"
-       :src='carousel.gambar_gallery[0].url'
+       :src='carousel.image[0].url'
     ></v-img>
 
-    <v-card-title>{{carousel.keterangan_gallery}}</v-card-title>
+    <v-card-title>{{carousel.description}}</v-card-title>
 
     <v-card-text>
       <v-row
@@ -37,7 +37,7 @@
       >
         <v-icon>mdi-calendar-blank</v-icon>
         <div class="grey--text ms-4">
-          {{carousel.tanggal_gallery}}
+          {{carousel.date}}
         </div>
       </v-row>
     </v-card-text>
@@ -64,7 +64,7 @@ import axios from "axios";
     data () {
       return {
         carousel: [],
-        CMS_API: process.env.VUE_APP_CMS_API,
+         CMS_API: process.env.VUE_APP_CMS_API,
       }
     },
     beforeMount() {
@@ -72,15 +72,14 @@ import axios from "axios";
    },
    methods: {
     async fetchData() {
-      const carousel = await axios.get("http://103.134.154.227:1337/galleries");
+      const carousel = await axios.get(this.CMS_API + "/galleries");
       //const logoHeader = await axios.get(this.CMS_API + "/logo-header");
       var i;
       for (let i = 0; i < 5; i++) {
         this.carousel.push(carousel.data[i])
-        //console.log(i)
       }
-      //console.log("ini gambar")
-      //console.log(this.carousel[0].gambar_artikel[0].url)
+      console.log("ini gambar")
+      console.log(this.carousel[0].image[0].url)
       //console.log(this.carousel[1])
     },
     
